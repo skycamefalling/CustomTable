@@ -7,12 +7,22 @@
 //
 
 #import "PCDAppDelegate.h"
+#import "PCDViewController.h"
 
 @implementation PCDAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    PCDViewController *mainView = [storyBoard instantiateViewControllerWithIdentifier:@"mainView"];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:mainView];
+    self.window.rootViewController = navController;
+    
+    navController.navigationBar.tintColor = [UIColor colorWithRed:231.0/256.0 green:136.0/256.0 blue:58.0/256.0 alpha:1.00];
+//    NSDictionary *textAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor colorWithRed:116.0/256.0 green:197.0/256.0 blue:197.0/256.0 alpha:1.00], UITextAttributeTextColor, [UIColor grayColor], UITextAttributeTextShadowColor, nil];
+      NSDictionary *textAttributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], UITextAttributeTextColor, [UIColor grayColor], UITextAttributeTextShadowColor, nil];
+    [[UINavigationBar appearance] setTitleTextAttributes:textAttributes];
     return YES;
 }
 							

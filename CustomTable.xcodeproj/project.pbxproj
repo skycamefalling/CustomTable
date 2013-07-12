@@ -18,6 +18,16 @@
 		B0863175177E1A1300D9A567 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B0863174177E1A1300D9A567 /* Default-568h@2x.png */; };
 		B0863178177E1A1300D9A567 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0863176177E1A1300D9A567 /* MainStoryboard.storyboard */; };
 		B086317B177E1A1300D9A567 /* PCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B086317A177E1A1300D9A567 /* PCDViewController.m */; };
+		B0863183177E1B9700D9A567 /* PCDCustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0863182177E1B9700D9A567 /* PCDCustomTableCell.m */; };
+		B0C5FC8A178B3FFF00FC7C24 /* PCDCustomCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C5FC89178B3FFF00FC7C24 /* PCDCustomCellView.m */; };
+		B0C5FC8C178B43B000FC7C24 /* newicon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C5FC8B178B43B000FC7C24 /* newicon.png */; };
+		B0C5FC8E178B463900FC7C24 /* cellbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C5FC8D178B463900FC7C24 /* cellbackground.png */; };
+		B0C5FC91178B9F1600FC7C24 /* newcell.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C5FC8F178B9F1600FC7C24 /* newcell.png */; };
+		B0C5FC92178B9F1600FC7C24 /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C5FC90178B9F1600FC7C24 /* header.png */; };
+		B0C5FC95178B9F7200FC7C24 /* PCDCustomHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C5FC94178B9F7100FC7C24 /* PCDCustomHeader.m */; };
+		B0C5FC97178C4C6D00FC7C24 /* newheader.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C5FC96178C4C6D00FC7C24 /* newheader.png */; };
+		B0C5FC99178C642E00FC7C24 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C5FC98178C642E00FC7C24 /* background.png */; };
+		B0C5FC9B178CC9B300FC7C24 /* headerImage.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C5FC9A178CC9B300FC7C24 /* headerImage.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +47,19 @@
 		B0863177177E1A1300D9A567 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		B0863179177E1A1300D9A567 /* PCDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCDViewController.h; sourceTree = "<group>"; };
 		B086317A177E1A1300D9A567 /* PCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCDViewController.m; sourceTree = "<group>"; };
+		B0863181177E1B9700D9A567 /* PCDCustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCDCustomTableCell.h; sourceTree = "<group>"; };
+		B0863182177E1B9700D9A567 /* PCDCustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCDCustomTableCell.m; sourceTree = "<group>"; };
+		B0C5FC88178B3FFF00FC7C24 /* PCDCustomCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCDCustomCellView.h; sourceTree = "<group>"; };
+		B0C5FC89178B3FFF00FC7C24 /* PCDCustomCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCDCustomCellView.m; sourceTree = "<group>"; };
+		B0C5FC8B178B43B000FC7C24 /* newicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newicon.png; sourceTree = "<group>"; };
+		B0C5FC8D178B463900FC7C24 /* cellbackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellbackground.png; sourceTree = "<group>"; };
+		B0C5FC8F178B9F1600FC7C24 /* newcell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newcell.png; sourceTree = "<group>"; };
+		B0C5FC90178B9F1600FC7C24 /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
+		B0C5FC93178B9F7100FC7C24 /* PCDCustomHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCDCustomHeader.h; sourceTree = "<group>"; };
+		B0C5FC94178B9F7100FC7C24 /* PCDCustomHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCDCustomHeader.m; sourceTree = "<group>"; };
+		B0C5FC96178C4C6D00FC7C24 /* newheader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newheader.png; sourceTree = "<group>"; };
+		B0C5FC98178C642E00FC7C24 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		B0C5FC9A178CC9B300FC7C24 /* headerImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headerImage.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +111,12 @@
 				B0863176177E1A1300D9A567 /* MainStoryboard.storyboard */,
 				B0863179177E1A1300D9A567 /* PCDViewController.h */,
 				B086317A177E1A1300D9A567 /* PCDViewController.m */,
+				B0863181177E1B9700D9A567 /* PCDCustomTableCell.h */,
+				B0863182177E1B9700D9A567 /* PCDCustomTableCell.m */,
+				B0C5FC88178B3FFF00FC7C24 /* PCDCustomCellView.h */,
+				B0C5FC89178B3FFF00FC7C24 /* PCDCustomCellView.m */,
+				B0C5FC93178B9F7100FC7C24 /* PCDCustomHeader.h */,
+				B0C5FC94178B9F7100FC7C24 /* PCDCustomHeader.m */,
 				B0863165177E1A1200D9A567 /* Supporting Files */,
 			);
 			path = CustomTable;
@@ -96,7 +125,14 @@
 		B0863165177E1A1200D9A567 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B0C5FC9A178CC9B300FC7C24 /* headerImage.png */,
+				B0C5FC96178C4C6D00FC7C24 /* newheader.png */,
+				B0C5FC98178C642E00FC7C24 /* background.png */,
+				B0C5FC8F178B9F1600FC7C24 /* newcell.png */,
+				B0C5FC90178B9F1600FC7C24 /* header.png */,
+				B0C5FC8D178B463900FC7C24 /* cellbackground.png */,
 				B0863166177E1A1200D9A567 /* CustomTable-Info.plist */,
+				B0C5FC8B178B43B000FC7C24 /* newicon.png */,
 				B0863167177E1A1200D9A567 /* InfoPlist.strings */,
 				B086316A177E1A1200D9A567 /* main.m */,
 				B086316C177E1A1300D9A567 /* CustomTable-Prefix.pch */,
@@ -164,6 +200,13 @@
 				B0863173177E1A1300D9A567 /* Default@2x.png in Resources */,
 				B0863175177E1A1300D9A567 /* Default-568h@2x.png in Resources */,
 				B0863178177E1A1300D9A567 /* MainStoryboard.storyboard in Resources */,
+				B0C5FC8C178B43B000FC7C24 /* newicon.png in Resources */,
+				B0C5FC8E178B463900FC7C24 /* cellbackground.png in Resources */,
+				B0C5FC91178B9F1600FC7C24 /* newcell.png in Resources */,
+				B0C5FC92178B9F1600FC7C24 /* header.png in Resources */,
+				B0C5FC97178C4C6D00FC7C24 /* newheader.png in Resources */,
+				B0C5FC99178C642E00FC7C24 /* background.png in Resources */,
+				B0C5FC9B178CC9B300FC7C24 /* headerImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +220,9 @@
 				B086316B177E1A1300D9A567 /* main.m in Sources */,
 				B086316F177E1A1300D9A567 /* PCDAppDelegate.m in Sources */,
 				B086317B177E1A1300D9A567 /* PCDViewController.m in Sources */,
+				B0863183177E1B9700D9A567 /* PCDCustomTableCell.m in Sources */,
+				B0C5FC8A178B3FFF00FC7C24 /* PCDCustomCellView.m in Sources */,
+				B0C5FC95178B9F7200FC7C24 /* PCDCustomHeader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +345,7 @@
 				B0863180177E1A1300D9A567 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
