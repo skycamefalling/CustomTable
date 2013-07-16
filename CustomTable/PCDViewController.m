@@ -50,6 +50,14 @@
     //Use an image for your background 
 //    self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.png"]];
     
+    
+//    UIBarButtonItem *leftButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(openPopover)];
+//    self.navigationItem.leftBarButtonItem = leftButton;
+//    
+    
+    _hiddenView = [[UIView alloc] init];
+    _hiddenView.hidden = YES;
+    
     _animatingSwipe = NO;
     [self setupGestureRecognizers];
     [self setHiddenView];
@@ -71,9 +79,39 @@
 
 -(void)setHiddenView
 {
-    _hiddenView.frame = CGRectMake(0, 0, 400, 84);    
+    //_hiddenView.frame = CGRectMake(0, 0, 50, 84);
 
-    _hiddenView.backgroundColor = [UIColor blueColor];
+    _hiddenView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"customBackground.png"]];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(30, 5, 70, 30)];
+    label.text = @"Test";
+    label.textColor = [UIColor whiteColor];
+    label.backgroundColor = [UIColor clearColor];
+    [_hiddenView addSubview:label];
+    [self.view addSubview:_hiddenView];
+    [self.view sendSubviewToBack:_hiddenView];
+    
+}
+
+-(void)openPopover
+{
+    
+    // change to where you want it to show and how big you want it
+    UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(25, 25, 100, 50)]; 
+    
+    customView.alpha = 1.0;
+    customView.layer.cornerRadius = 5;
+    customView.layer.borderWidth = 1.5f;
+    customView.backgroundColor = [UIColor whiteColor];
+    //customView.layer.borderColor = CGColorCreate(CGColorSpaceCreateDeviceRGB(), YourColorValues);
+    customView.layer.masksToBounds = YES;
+    
+    [self.view addSubview:customView];
+    
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.4];
+    [customView setAlpha:1.0];
+    [UIView commitAnimations];
+    [UIView setAnimationDuration:0.0];
 }
 
 
@@ -288,6 +326,7 @@
 //Adding the gesture to the cell
 -(void)addSwipeTo:(UITableViewCell *)cell direction:(UISwipeGestureRecognizerDirection)direction
 {
+    _hiddenView.hidden = NO;
     _hiddenView.frame = cell.frame;
     
     // Add the side swipe view to the table below the cell
@@ -330,7 +369,7 @@
         _hiddenView.frame = CGRectMake(0, cellFrame.origin.y, cellFrame.size.width, cellFrame.size.height);
     }
     
-    // Change the 200 if you want the cell to not leave the screen or
+    // Change the 200 if you want the cell to not leave the screen when swiping to the right or
     // put cellFrame.size.width in its place if you want it to leave the screen
     cell.frame = CGRectMake(direction == UISwipeGestureRecognizerDirectionRight ? 200 : -cellFrame.size.width, cellFrame.origin.y, cellFrame.size.width, cellFrame.size.height);
     

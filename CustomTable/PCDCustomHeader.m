@@ -51,10 +51,6 @@
     self.headerLabel.frame = CGRectMake(1, 1, self.bounds.size.width, self.bounds.size.height);
 }
 
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-
-
 
 //Adding the color and size for the view
 -(void) drawRect:(CGRect)rect

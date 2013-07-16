@@ -19,6 +19,7 @@
 		B0863178177E1A1300D9A567 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0863176177E1A1300D9A567 /* MainStoryboard.storyboard */; };
 		B086317B177E1A1300D9A567 /* PCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B086317A177E1A1300D9A567 /* PCDViewController.m */; };
 		B0863183177E1B9700D9A567 /* PCDCustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0863182177E1B9700D9A567 /* PCDCustomTableCell.m */; };
+		B0B49A0617947F4000324047 /* customBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B49A0517947F4000324047 /* customBackground.png */; };
 		B0C5FC8A178B3FFF00FC7C24 /* PCDCustomCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C5FC89178B3FFF00FC7C24 /* PCDCustomCellView.m */; };
 		B0C5FC8C178B43B000FC7C24 /* newicon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C5FC8B178B43B000FC7C24 /* newicon.png */; };
 		B0C5FC8E178B463900FC7C24 /* cellbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C5FC8D178B463900FC7C24 /* cellbackground.png */; };
@@ -49,6 +50,7 @@
 		B086317A177E1A1300D9A567 /* PCDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCDViewController.m; sourceTree = "<group>"; };
 		B0863181177E1B9700D9A567 /* PCDCustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCDCustomTableCell.h; sourceTree = "<group>"; };
 		B0863182177E1B9700D9A567 /* PCDCustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCDCustomTableCell.m; sourceTree = "<group>"; };
+		B0B49A0517947F4000324047 /* customBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customBackground.png; sourceTree = "<group>"; };
 		B0C5FC88178B3FFF00FC7C24 /* PCDCustomCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCDCustomCellView.h; sourceTree = "<group>"; };
 		B0C5FC89178B3FFF00FC7C24 /* PCDCustomCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCDCustomCellView.m; sourceTree = "<group>"; };
 		B0C5FC8B178B43B000FC7C24 /* newicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newicon.png; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		B0863165177E1A1200D9A567 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B0B49A0517947F4000324047 /* customBackground.png */,
 				B0C5FC9A178CC9B300FC7C24 /* headerImage.png */,
 				B0C5FC96178C4C6D00FC7C24 /* newheader.png */,
 				B0C5FC98178C642E00FC7C24 /* background.png */,
@@ -207,6 +210,7 @@
 				B0C5FC97178C4C6D00FC7C24 /* newheader.png in Resources */,
 				B0C5FC99178C642E00FC7C24 /* background.png in Resources */,
 				B0C5FC9B178CC9B300FC7C24 /* headerImage.png in Resources */,
+				B0B49A0617947F4000324047 /* customBackground.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
