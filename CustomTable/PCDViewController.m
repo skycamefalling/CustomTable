@@ -10,6 +10,10 @@
 #import "PCDCustomTableCell.h"
 #import "PCDCustomCellView.h"
 #import "PCDCustomHeader.h"
+#import "PCDSocialViewController.h"
+#import "PCDHiddenView.h"
+#import "PCDMailViewController.h"
+#import "PCDMenuController.h"
 
 #define USE_GESTURE_RECOGNIZERS YES
 #define BOUNCE_PIXELS 15.0
@@ -55,9 +59,7 @@
 //    self.navigationItem.leftBarButtonItem = leftButton;
 //    
     
-    _hiddenView = [[UIView alloc] init];
-    _hiddenView.hidden = YES;
-    
+
     _animatingSwipe = NO;
     [self setupGestureRecognizers];
     [self setHiddenView];
@@ -80,7 +82,13 @@
 -(void)setHiddenView
 {
     //_hiddenView.frame = CGRectMake(0, 0, 50, 84);
-
+    
+    //Sets hidden view with the contents of PCDHiddenView
+    _hiddenView = [[PCDHiddenView alloc] init];
+    
+    
+    //This code creates the hiddenView
+/*
     _hiddenView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"customBackground.png"]];
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(30, 5, 70, 30)];
     label.text = @"Test";
@@ -89,7 +97,19 @@
     [_hiddenView addSubview:label];
     [self.view addSubview:_hiddenView];
     [self.view sendSubviewToBack:_hiddenView];
+*/
+    UILongPressGestureRecognizer *longGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress)];
+    [_hiddenView addGestureRecognizer:longGesture];
     
+    
+}
+
+-(void)longPress
+{
+    NSLog(@"Long press");
+    PCDMenuController *menu = [[UIMenuController alloc] init];
+    [menu showMenuController];
+    [_hiddenView becomeFirstResponder];
 }
 
 -(void)openPopover
@@ -267,6 +287,7 @@
     imageView.frame = CGRectMake(0, 0, 300, 30);
     UILabel *headerLabel = [[UILabel alloc] initWithFrame:CGRectMake(1, 3, 200, 20)];
     headerLabel.text = @"Test Header";
+    headerLabel.font = [UIFont fontWithName:@"Zapfino" size:15.0];
     headerLabel.backgroundColor = [UIColor clearColor];
     headerLabel.textColor = [UIColor colorWithRed:235.0/256.0 green:176.0/256.0 blue:100.0/256.0 alpha:1.00];
     [headerView addSubview:imageView];
@@ -326,9 +347,9 @@
 //Adding the gesture to the cell
 -(void)addSwipeTo:(UITableViewCell *)cell direction:(UISwipeGestureRecognizerDirection)direction
 {
-    _hiddenView.hidden = NO;
     _hiddenView.frame = cell.frame;
     
+        
     // Add the side swipe view to the table below the cell
     [_tableView insertSubview:_hiddenView belowSubview:cell];
     

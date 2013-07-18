@@ -20,6 +20,12 @@
 		B086317B177E1A1300D9A567 /* PCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B086317A177E1A1300D9A567 /* PCDViewController.m */; };
 		B0863183177E1B9700D9A567 /* PCDCustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B0863182177E1B9700D9A567 /* PCDCustomTableCell.m */; };
 		B0B49A0617947F4000324047 /* customBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B0B49A0517947F4000324047 /* customBackground.png */; };
+		B0B49A3C17977AAB00324047 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B49A3B17977AAB00324047 /* Social.framework */; };
+		B0B49A3F17977AD000324047 /* PCDSocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B49A3E17977AD000324047 /* PCDSocialViewController.m */; };
+		B0B49A4117977B8300324047 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B49A4017977B8300324047 /* MessageUI.framework */; };
+		B0B49A4417977FDD00324047 /* PCDHiddenView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B49A4317977FDD00324047 /* PCDHiddenView.m */; };
+		B0B49A471797880600324047 /* PCDMailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B49A461797880600324047 /* PCDMailViewController.m */; };
+		B0B49A4A17978A4C00324047 /* PCDMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B49A4917978A4C00324047 /* PCDMenuController.m */; };
 		B0C5FC8A178B3FFF00FC7C24 /* PCDCustomCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = B0C5FC89178B3FFF00FC7C24 /* PCDCustomCellView.m */; };
 		B0C5FC8C178B43B000FC7C24 /* newicon.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C5FC8B178B43B000FC7C24 /* newicon.png */; };
 		B0C5FC8E178B463900FC7C24 /* cellbackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B0C5FC8D178B463900FC7C24 /* cellbackground.png */; };
@@ -51,6 +57,16 @@
 		B0863181177E1B9700D9A567 /* PCDCustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCDCustomTableCell.h; sourceTree = "<group>"; };
 		B0863182177E1B9700D9A567 /* PCDCustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCDCustomTableCell.m; sourceTree = "<group>"; };
 		B0B49A0517947F4000324047 /* customBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customBackground.png; sourceTree = "<group>"; };
+		B0B49A3B17977AAB00324047 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		B0B49A3D17977AD000324047 /* PCDSocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCDSocialViewController.h; sourceTree = "<group>"; };
+		B0B49A3E17977AD000324047 /* PCDSocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCDSocialViewController.m; sourceTree = "<group>"; };
+		B0B49A4017977B8300324047 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		B0B49A4217977FDD00324047 /* PCDHiddenView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCDHiddenView.h; sourceTree = "<group>"; };
+		B0B49A4317977FDD00324047 /* PCDHiddenView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCDHiddenView.m; sourceTree = "<group>"; };
+		B0B49A451797880600324047 /* PCDMailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCDMailViewController.h; sourceTree = "<group>"; };
+		B0B49A461797880600324047 /* PCDMailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCDMailViewController.m; sourceTree = "<group>"; };
+		B0B49A4817978A4C00324047 /* PCDMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCDMenuController.h; sourceTree = "<group>"; };
+		B0B49A4917978A4C00324047 /* PCDMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCDMenuController.m; sourceTree = "<group>"; };
 		B0C5FC88178B3FFF00FC7C24 /* PCDCustomCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PCDCustomCellView.h; sourceTree = "<group>"; };
 		B0C5FC89178B3FFF00FC7C24 /* PCDCustomCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PCDCustomCellView.m; sourceTree = "<group>"; };
 		B0C5FC8B178B43B000FC7C24 /* newicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newicon.png; sourceTree = "<group>"; };
@@ -69,6 +85,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0B49A4117977B8300324047 /* MessageUI.framework in Frameworks */,
+				B0B49A3C17977AAB00324047 /* Social.framework in Frameworks */,
 				B086315F177E1A1200D9A567 /* UIKit.framework in Frameworks */,
 				B0863161177E1A1200D9A567 /* Foundation.framework in Frameworks */,
 				B0863163177E1A1200D9A567 /* CoreGraphics.framework in Frameworks */,
@@ -98,6 +116,8 @@
 		B086315D177E1A1200D9A567 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B0B49A4017977B8300324047 /* MessageUI.framework */,
+				B0B49A3B17977AAB00324047 /* Social.framework */,
 				B086315E177E1A1200D9A567 /* UIKit.framework */,
 				B0863160177E1A1200D9A567 /* Foundation.framework */,
 				B0863162177E1A1200D9A567 /* CoreGraphics.framework */,
@@ -119,6 +139,14 @@
 				B0C5FC89178B3FFF00FC7C24 /* PCDCustomCellView.m */,
 				B0C5FC93178B9F7100FC7C24 /* PCDCustomHeader.h */,
 				B0C5FC94178B9F7100FC7C24 /* PCDCustomHeader.m */,
+				B0B49A4217977FDD00324047 /* PCDHiddenView.h */,
+				B0B49A4317977FDD00324047 /* PCDHiddenView.m */,
+				B0B49A3D17977AD000324047 /* PCDSocialViewController.h */,
+				B0B49A3E17977AD000324047 /* PCDSocialViewController.m */,
+				B0B49A451797880600324047 /* PCDMailViewController.h */,
+				B0B49A461797880600324047 /* PCDMailViewController.m */,
+				B0B49A4817978A4C00324047 /* PCDMenuController.h */,
+				B0B49A4917978A4C00324047 /* PCDMenuController.m */,
 				B0863165177E1A1200D9A567 /* Supporting Files */,
 			);
 			path = CustomTable;
@@ -227,6 +255,10 @@
 				B0863183177E1B9700D9A567 /* PCDCustomTableCell.m in Sources */,
 				B0C5FC8A178B3FFF00FC7C24 /* PCDCustomCellView.m in Sources */,
 				B0C5FC95178B9F7200FC7C24 /* PCDCustomHeader.m in Sources */,
+				B0B49A3F17977AD000324047 /* PCDSocialViewController.m in Sources */,
+				B0B49A4417977FDD00324047 /* PCDHiddenView.m in Sources */,
+				B0B49A471797880600324047 /* PCDMailViewController.m in Sources */,
+				B0B49A4A17978A4C00324047 /* PCDMenuController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

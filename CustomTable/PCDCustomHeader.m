@@ -26,13 +26,14 @@
 {
     self = [super init];
     if (self) {
-        self.backgroundColor = [UIColor clearColor];
+
+        self.contentView.backgroundColor = [UIColor clearColor];
         self.opaque = NO;
         _headerLabel = [[UILabel alloc] init];
-        _headerLabel.textAlignment = NSTextAlignmentLeft;
+        _headerLabel.textAlignment = NSTextAlignmentCenter;
         _headerLabel.opaque = NO;
         _headerLabel.backgroundColor = [UIColor clearColor];
-        _headerLabel.font = [UIFont boldSystemFontOfSize:15.0];
+        _headerLabel.font = [UIFont fontWithName:@"Zapfino" size:12.0];
         _headerLabel.textColor = [UIColor whiteColor];
         _headerLabel.shadowColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
         _headerLabel.shadowOffset = CGSizeMake(0, -1);
